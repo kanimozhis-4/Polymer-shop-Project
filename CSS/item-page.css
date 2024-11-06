@@ -71,5 +71,11 @@
     .mens-heading{
         margin-top: 2rem;
     }
+    .item-list .item-border {
+        border-bottom: 2px solid black; /* Adds a border under each list item */
+        padding-bottom: 0.5rem; /* Optional: Adds some spacing for a cleaner look */
+        margin-bottom: 0.5rem; /* Optional: Adds space between each item */
+        transition: border-color 0.3s ease;
+    }
     
 }

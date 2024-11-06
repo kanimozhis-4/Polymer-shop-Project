@@ -188,5 +188,8 @@
         position: fixed;
         bottom: 0;
     }
+    .qty-dropdown{
+        margin-top: 0;
+    }
     
 }
