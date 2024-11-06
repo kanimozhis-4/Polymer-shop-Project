@@ -104,6 +104,18 @@
     background-color: black;
 
 }
+select {
+    appearance: none; /* Remove default browser styling */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%2212%22 height%3D%2212%22 viewBox%3D%220 0 24 24%22 fill%3D%22%23999999%22%3E%3Cpath d%3D%22M7 10l5 5 5-5z%22/%3E%3C/svg%3E'); /* Custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 0.6rem center; /* Position of the icon */
+    background-size: 1.5rem; /* Size of the icon */
+    padding-right: 2rem; /* Add padding to avoid text overlapping the icon */
+    color:black; /* Text color */
+    border: none;
+    font-size: 1rem;
+    outline:none;
+}
 @media (min-width: 321px) { 
     .item{
         margin-bottom: 1.5rem;
