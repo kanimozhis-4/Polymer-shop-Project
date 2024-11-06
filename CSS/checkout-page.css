@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.whole-container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.heading{
+    margin-bottom: 0.5rem;
+}
+.shop-heading{
+    font-size: 1.01rem;
+}
+.container {
+    max-width: 85vw; /* Limits to 80% of viewport width */
+    width: 100%;
+    /* padding: 2rem; */
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    letter-spacing: 0.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    /* font-weight: 1rem; */
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.description {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Positions columns evenly */
+    gap: 2%; /* Space between the columns */
+}
+#billing-heading{
+    margin-bottom: 1.5rem;
+}
+.column {
+    width: 100%;
+    text-align: left;
+}
+
+.column h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem; /* Adjust to desired spacing */
+    margin-left: 0; /* Ensures no left margin */
+    padding: 0; /* Ensures no padding around h3 */
+}
+
+label {
+    font-size: 0.75rem;
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+}
+.state-code{
+    display: flex;
+    flex-direction: row;
+    width:85vw;
+    justify-content: space-between;
+    .state-div{
+        width:40vw;
+    }
+    .code-div{
+        width:40vw;
+    }
+
+}
+#state{
+    width: 40vw;
+}
+#code{
+    width:40vw;
+}
+select{
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%2212%22 height%3D%2212%22 viewBox%3D%220 0 24 24%22 fill%3D%22%23999999%22%3E%3Cpath d%3D%22M7 10l5 5 5-5z%22/%3E%3C/svg%3E'); /* Grey arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 1.5rem;
+    appearance: none;
+    color: black;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 85vw;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    outline: none;
+    margin-bottom: 2rem;
+    opacity: 0.6;
+}
+select{
+    width: 85vw;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    outline: none;
+    margin-bottom: 2rem;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-bottom: 2px solid black;
+}
+.state-code input[type="text"]{
+    margin-bottom: 1.5rem;
+}
+
+
+.billing-address {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertically centers checkbox and label */
+    text-align: left;
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+
+}
+
+.billing-address input[type="checkbox"] {
+    appearance: none; /* Remove default checkbox styling */
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid black; /* Custom border size and color */
+    margin-right:1rem;
+    position: relative;
+}
+.billing-address label {
+    /* width:60vw; */
+    margin: 0; /* Remove default margin for the label */
+}
+/* Hide the billing address by default */
+/* .diff-billing-address {
+    display: none;
+} */
+.billing-address input[type="checkbox"]:checked::before {
+    content: "✔"; /* Unicode for checkmark */
+    color: white;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the checkmark */
+}
+.billing-address input[type="checkbox"]:checked {
+   
+    background-color: #1b1b4b; /* Dark blue background */
+    color:white;
+    border-color: black; /* Match border color to background */
+    
+}
+.billing-address input[type="checkbox"]:checked + label + .diff-billing-address {
+    display: block; /* Show the different billing address section */
+}
+.place-order{
+    position: fixed;
+    bottom: 0;
+    left:0; 
+    width: 100%;
+}
+.place-order-button{
+    font-size: 1rem;
+    width: 100%;
+    height: 4rem;
+    background-color: hsl(240, 71%, 19%);
+    color: white;
+}
+
+.expiry-cvv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 2rem;
+    width:90vw;
+    font-size: 0.75rem; /* Ensure this matches the overall form font size */
+    line-height: 1.2rem; /* Aligns the text with the checkbox */
+   
+    .month{
+        width:27vw;
+        /* border:none; */
+        
+    }
+    .year{
+        width:27vw;
+    }
+    input{
+        width:30vw;
+    }
+   
+}
+.form-group {
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    top: -20px;
+    font-size: 12px;
+    color: #333;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+/* Show label when the input is focused */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    opacity: 1;
+}
+
+/* Basic styling for inputs */
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-group input:focus::placeholder {
+    color: transparent;
+}
+.total{
+    margin-bottom: 8em;
+    margin-top: 2rem;
+    font-weight: 50;
+    span{
+        margin-left: 0;
+    }
+    
+    /* margin-top: 2rem; */
+}
+.price-space{
+    margin-bottom: 0.6rem;
+}
+.column .Order-heading{
+    margin-bottom: 1rem;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 0.8rem;
+    /* margin-bottom: 1rem; */
+    margin-left: 0rem;
+}
+.made-by{
+    font-size: 0.8rem;
+    display: none;
+}
+select option{
+    color: black;
+}
+@media (min-width: 321px) { 
+    .container{
+        margin:0 25%;
+        margin-top: 8vh;
+        max-width: 65vw;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 2rem; 
+        max-width: 65vw;
+        margin-top: 5vh;
+        margin-bottom: 20vh;
+        /* width:60%; */
+    }
+    .column{
+        /* width:28%; */
+        max-width: 22vw;
+       
+    }
+    .state-code{
+        width: 22vw;
+        .code-div{
+            width:10vw;
+        }
+        .state-div{
+            width:10vw;
+        }
+    }
+    select{
+        width:22vw;
+    }
+    .expiry-cvv{
+        width: 22vw;
+        .month{
+            width:6vw;
+        }
+        .year{
+            width:6vw;
+        }
+        input{
+            width:8vw;
+        }
+    }
+    .total{
+        margin-bottom: 2rem;
+    }
+    .place-order{
+        position: relative;
+        width:10vw;
+        
+        /* position: fixed;
+        bottom: 15rem;
+        left:49rem;
+        width:13vw; */
+       
+    }
+    .place-order-button{
+        height: 2rem;
+        font-size: 0.8rem;
+        color:black;
+        background-color: white;
+        border: 0.15rem solid black;
+    }
+    .made-by{
+        display: block;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+    .made-by{
+        display:block;
+        margin-bottom: 0rem;
+        bottom: 0;
+    }
+    .demo-button-div{
+        display: block;
+        bottom: 0;
+    }
+    .demo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    /* .demo-button-div{
+        
+        bottom: 0;
+    } */
+}

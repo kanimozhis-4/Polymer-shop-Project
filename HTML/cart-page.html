@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css"/>
+    <link rel="stylesheet" href="../CSS/cart-page.css"/>
+    <title>Cart-Page</title>
+</head>
+<body> 
+    <div class="outer-container">
+        <header class="heading"> 
+            <!-- Three-line icon acting as a toggle button -->
+            <div class="three-line" id="menu-toggle">
+                <img class="three-line-img" src="../Image/three-line.png" alt="three-line icon">
+            </div>
+            <!-- Header Content -->
+            <div class="heading-cart">
+                <a href="../HTML/home-page.html" class="image-link">
+                <h3 class="shop-heading">S H O P</h3></a> 
+                <img class="cart-img" src="../Image/cart.png" alt="cart icon"/>
+            </div>
+        </header> 
+
+        <!-- Sidebar menu -->
+        <div class="sidebar" id="sidebar">
+            <ul class="item-list-sidebar">
+                <a href="../HTML/item-page.html" class="image-link">
+                <li>Men's Outerwear</li></a>
+                <a href="../HTML/item-page.html" class="image-link">
+                <li>Ladies Outerwear</li></a>
+                <a href="../HTML/item-page.html" class="image-link">
+                <li>Men's T-Shirts</li></a>
+                <a href="../HTML/item-page.html" class="image-link">
+                <li>Ladies T-Shirts</li></a>
+            </ul>
+        </div>
+
+         <!-- Overlay that closes the sidebar when clicked -->
+         <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <!-- Main Container -->
+        <div class="main-container"> 
+            <p class="cart-heading">Your Cart</p>
+            <p class="item-count">(2items)</p> 
+            <div class="whole-item">
+                <div class="item"> 
+                    <img class="item-image" src="../Image/men1.png" alt="item1"/>
+                    <div class="item-detail">
+                        
+                            <p class="item-heading">Men's Tech Shell Full-Zip</p>
+                            
+                        <div class="qty-dropdown">
+                            <p class="qauntity">Qty:</p>
+                            <select id="number-dropdown" name="number-dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                        </div>
+                        <p class="color-change">Size:  M</p>
+                        <p class="color-change">$50.20</p>
+                    </div>
+                    <div class="cancel-image">
+                    <img src="../Image/cancel.png" alt="cancel">
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img class="item-image" src="../Image/men2.png" alt="item2"/>
+                    <div class="item-detail">
+                            <p class="item-heading">Anvi L/S Crew Neck-..</p>
+                          
+                        <div class="qty-dropdown">
+                            <p class="qauntity">Qty:</p>
+                            <select id="number-dropdown" name="number-dropdown">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                        </div>
+                        <p class="color-change">Size:  M</p>
+                        <p class="color-change">$50.20</p>
+                    </div>
+                    <div class="cancel-image">
+                        <img src="../Image/cancel.png" alt="cancel">
+                    </div>
+
+                </div> 
+            </div> 
+            <div class="bottom-footer">
+            <p class="total">Total:<span>$72.35</span></p>
+            <footer class="checkout">
+                <a href="../HTML/checkout-page.html">
+                <button class="checkout-button">CHECKOUT</button></a>
+            </footer> 
+            </div>
+            <p class="made-by">Made by Polymer</p> 
+            <div class="demo-button-div">
+                <button class="demo-button">DEMO ONLY</button>
+            </div> 
+        </div>
+       
+
+    </div>
+    <script src="../JS/Home-Page.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="../CSS/style.css"/>
+    <!-- <link rel="stylesheet" href="../CSS/cart-page.css"/> -->
+    <!-- <link rel="stylesheet" href="../CSS/single-item.css"/> -->
+    <link rel="stylesheet" href="../CSS/checkout-page.css"/>
+    
+</head>
+<body>
+    <header class="heading"> 
+        <div class="three-line" id="menu-toggle">
+            <img class="three-line-img" src="../Image/three-line.png" alt="three-line icon">
+        </div>
+        <div class="heading-cart">
+            <a href="../HTML/home-page.html" class="image-link">
+        <h3 class="shop-heading">S H O P</h3></a>
+        <a href="../HTML/cart-page.html" class="image-link">
+        <img class="cart-img" src="../Image/cart.png" alt="cart icon"/></a>
+        </div>
+    </header>  
+     <!-- Sidebar menu -->
+     <div class="sidebar" id="sidebar">
+        <ul class="item-list-sidebar">
+            <a href="../HTML/item-page.html" class="image-link">
+            <li>Men's Outerwear</li></a>
+            <a href="../HTML/item-page.html" class="image-link">
+            <li>Ladies Outerwear</li></a>
+            <a href="../HTML/item-page.html" class="image-link">
+            <li>Men's T-Shirts</li></a>
+            <a href="../HTML/item-page.html" class="image-link">
+            <li>Ladies T-Shirts</li></a>
+        </ul>
+    </div>
+
+     <!-- Overlay that closes the sidebar when clicked -->
+     <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    
+    <div class="whole-container">
+        
+       
+    <div class="container">
+       
+        <p class="subtitle">Checkout</p>
+        <p class="description">Shop is a demo app - form data will not be sent</p>
+
+        <div class="form-container">
+            <div class="column">
+                <h3>Account Information</h3>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                    <label>Email</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                    <label>Phone Number</label>
+                </div>
+                
+                <h3 class="shipping">Shipping Address</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="Address" required>
+                    <label>Address</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" placeholder="City" required>
+                    <label>City</label>
+                </div>
+                <div class="form-group state-code">
+                    <div class="state-div">
+                    <input type="text" placeholder="State/Province" required>
+                    <label>State/Province</label>
+                    </div>
+                    <div class="code-div">
+                        <input type="text" placeholder="Zip/Postal Code" required>
+                        <label>Zip/Postal Code</label>
+                    </div>
+                </div>
+                
+                <label>Country</label>
+                <select>
+                    <option>United States</option>
+                    <option>Canada</option>
+                </select>
+                <h3 id="billing-heading">Billing Address</h3>
+                <div class="billing-address">
+                    <input type="checkbox" id="different-billing">
+                    <label for="different-billing">Use different billing address</label>
+                </div>
+                <div class="diff-billing-address" id="diff-billing-address">
+                    <div class="form-group">
+                        <input type="text" placeholder="Address" required>
+                        <label>Address</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" placeholder="City" required>
+                        <label>City</label>
+                    </div>
+                    <div class="form-group state-code">
+                        <input type="text" placeholder="State/Province" required>
+                        <label>State/Province</label>
+                    </div>
+                    <div class="form-group state-code">
+                        <input type="text" placeholder="Zip/Postal Code" required>
+                        <label>Zip/Postal Code</label>
+                    </div>
+                    <label>Country</label>
+                    <select>
+                        <option>United States</option>
+                        <option>Canada</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="column">
+                <h3>Payment Method</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="Cardholder Name" required>
+                    <label>Cardholder Name</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" placeholder="Card Number" required>
+                    <label>Card Number</label>
+                </div>
+                
+                <div class="expiry-cvv">
+                        <select class="month">
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Apr</option>
+                            <option>May</option>
+                            <option>Jun</option>
+                            <option>Jul</option>
+                            <option>Aug</option>
+                            <option>Sep</option>
+                            <option>Oct</option>
+                            <option>Nov</option>
+                            <option>Dec</option>
+                        </select>
+                        <select class="year">
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                        </select>
+                        <div >
+                            <input type="text" placeholder="CVV">
+                            <!-- <label>CVV</label> -->
+                        </div>                   
+                </div>
+                
+                <h3 class="Order-heading">Order Summary</h3>
+               
+                <div class="price price-space">
+                    <p >Men's Tech Shell Full Zip</p>
+                    <span>$50.20</span>
+                </div>
+                <div class="price">
+                    <p>Anvil L/S Crew Neck - Grey</p>
+                    <span>$22.15</span>
+                </div>
+                <div class="total price">
+                    <span>Total</span>
+                    <span>$72.35</span>
+                </div>
+                <footer class="place-order">
+                    <button class="place-order-button">PLACE ORDER</button>
+                </footer>
+            </div> 
+          
+        </div> 
+        <div class="demo">
+         <p class="made-by">Made by Polymer</p> 
+        <div class="demo-button-div">
+            <button class="demo-button">DEMO ONLY</button>
+        </div>
+        </div>
+        
+    </div>
+   
+    </div>
+    <script src="../JS/Home-Page.js"></script>
+    <script src="../JS/checkout-page.js"></script>
+</body>
+</html>
