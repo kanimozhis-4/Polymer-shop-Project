@@ -9,20 +9,19 @@
 </head>
 <body> 
     <div class="outer-container">
-        <header class="heading"> 
-            <!-- Three-line icon acting as a toggle button -->
+        <header class="heading">
             <div class="three-line" id="menu-toggle">
                 <img class="three-line-img" src="../Image/three-line.png" alt="three-line icon">
+            </div> 
+            <a href="../index.html" class="image-link">
+                <h3 class="shop-heading">S H O P</h3></a>  
+            <div class="cart-icon">
+                <a href="../HTML/cart-page.html" class="image-link">
+                    <img class="cart-img" src="../Image/cart.png" alt="cart icon"/></a>
             </div>
-            <!-- Header Content -->
-            <div class="heading-cart">
-                <a href="../index.html" class="image-link">
-                <h3 class="shop-heading">S H O P</h3></a> 
-                <img class="cart-img" src="../Image/cart.png" alt="cart icon"/>
-            </div>
-        </header> 
 
-        <!-- Sidebar menu -->
+        </header>
+
         <div class="sidebar" id="sidebar">
             <ul class="item-list-sidebar">
                 <a href="../HTML/item-page.html" class="image-link">
@@ -36,10 +35,8 @@
             </ul>
         </div>
 
-         <!-- Overlay that closes the sidebar when clicked -->
          <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-        <!-- Main Container -->
         <div class="main-container"> 
             <p class="cart-heading">Your Cart</p>
             <p class="item-count">(2items)</p> 
@@ -106,12 +103,15 @@
 
                 </div> 
             </div> 
-            <div class="bottom-footer">
-            <p class="total">Total:<span>$72.35</span></p>
-            <footer class="checkout">
-                <a href="../HTML/checkout-page.html">
-                <button class="checkout-button">CHECKOUT</button></a>
-            </footer> 
+            <div class="bottom-footer"> 
+            <div class="checkout-div">
+                <p class="total">Total:<span>$72.35</span></p>
+                <footer class="checkout"> 
+                    
+                    <a href="../HTML/checkout-page.html">
+                    <button class="checkout-button">CHECKOUT</button></a>
+                </footer>  
+            </div>
             </div>
             <p class="made-by">Made by Polymer</p> 
             <div class="demo-button-div">

@@ -1,13 +1,13 @@
-.men-img{
+.item-pic{
     display: none;
 }
-.heading{
+/* .heading{
     margin-bottom: 1rem;
 }
 .mens-heading{
     margin-top: 0;
     font-size: 0.9rem;
-}
+} */
 .item-count{
     color: grey;
 }
@@ -43,20 +43,20 @@
 .made-by{
     margin-top: 1rem;
 }
-@media (min-width: 321px) {
-    .men-img{
+@media (min-width: 768px) {
+    .item-pic{
         display: flex;
     }
     .whole-item{
-        width: 80%;
+        width: 100%;
         display: grid;
         row-gap:2rem;
-        column-gap: 0.5rem;
+        column-gap: 5rem;
         grid-template-columns: 1fr 1fr 1fr; /* Two equal-width columns */
         margin-top: 1rem;
         padding: 1rem;
         img{
-            width:80%;
+            width:100%;
             height: 100%;
             
         }
@@ -64,12 +64,16 @@
             margin-top: 6rem;
         }
     }
-    .shop-heading{
+    /* .shop-heading{
         padding-bottom: 2rem;
         font-size: 1rem;
     }
     .mens-heading{
         margin-top: 2rem;
+    } */
+    .item-list{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
     }
     .item-list .item-border {
         border-bottom: 2px solid black; /* Adds a border under each list item */

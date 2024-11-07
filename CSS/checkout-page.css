@@ -271,27 +271,30 @@ select:focus {
 select option{
     color: black;
 }
-@media (min-width: 321px) { 
+@media (min-width: 768px) { 
     .container{
         margin:0 25%;
-        margin-top: 8vh;
-        max-width: 65vw;
+        margin-top: 4vh;
+        /* max-width: 65vw; */
     }
     .form-container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        row-gap: 2rem; 
+        row-gap: 1000px; 
         max-width: 65vw;
         margin-top: 5vh;
         margin-bottom: 20vh;
         /* width:60%; */
-    }
+    } 
     .column{
-        /* width:28%; */
-        max-width: 22vw;
-       
+        width:auto;
     }
+    /* .column{
+        /* width:28%; */
+        /* max-width: 22vw; */
+       
+    
     .state-code{
         width: 22vw;
         .code-div{
@@ -321,7 +324,7 @@ select option{
     }
     .place-order{
         position: relative;
-        width:10vw;
+        width:180px;
         
         /* position: fixed;
         bottom: 15rem;
@@ -330,7 +333,7 @@ select option{
        
     }
     .place-order-button{
-        height: 2rem;
+        height: 35px;
         font-size: 0.8rem;
         color:black;
         background-color: white;
