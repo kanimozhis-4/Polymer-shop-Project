@@ -17,9 +17,8 @@
     font-size: 1.01rem;
 }
 .container {
-    max-width: 85vw; /* Limits to 80% of viewport width */
+    max-width: 85vw; 
     width: 100%;
-    /* padding: 2rem; */
     text-align: center;
 }
 
@@ -31,7 +30,6 @@
 
 .subtitle {
     font-size: 0.9rem;
-    /* font-weight: 1rem; */
     margin-top: 0.5rem;
     margin-bottom: 0.25rem;
 }
@@ -46,8 +44,8 @@
 .form-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Positions columns evenly */
-    gap: 2%; /* Space between the columns */
+    justify-content: space-between; 
+    gap: 2%; 
 }
 #billing-heading{
     margin-bottom: 1.5rem;
@@ -60,9 +58,9 @@
 .column h3 {
     font-size: 0.8rem;
     font-weight: bold;
-    margin-bottom: 2rem; /* Adjust to desired spacing */
-    margin-left: 0; /* Ensures no left margin */
-    padding: 0; /* Ensures no padding around h3 */
+    margin-bottom: 2rem;
+    margin-left: 0; 
+    padding: 0; 
 }
 
 label {
@@ -134,7 +132,7 @@ select:focus {
 .billing-address {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Vertically centers checkbox and label */
+    align-items: center; 
     text-align: left;
     font-size: 0.75rem;
     margin-bottom: 2rem;
@@ -142,39 +140,36 @@ select:focus {
 }
 
 .billing-address input[type="checkbox"] {
-    appearance: none; /* Remove default checkbox styling */
+    appearance: none; 
     width: 1.2rem;
     height: 1.2rem;
-    border: 2px solid black; /* Custom border size and color */
+    border: 2px solid black; 
     margin-right:1rem;
     position: relative;
 }
 .billing-address label {
-    /* width:60vw; */
-    margin: 0; /* Remove default margin for the label */
+    
+    margin: 0; 
 }
-/* Hide the billing address by default */
-/* .diff-billing-address {
-    display: none;
-} */
+
 .billing-address input[type="checkbox"]:checked::before {
-    content: "✔"; /* Unicode for checkmark */
+    content: "✔"; 
     color: white;
     font-size: 1.1rem;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the checkmark */
+    transform: translate(-50%, -50%); 
 }
 .billing-address input[type="checkbox"]:checked {
    
-    background-color: #1b1b4b; /* Dark blue background */
+    background-color: #1b1b4b;
     color:white;
-    border-color: black; /* Match border color to background */
+    border-color: black; 
     
 }
 .billing-address input[type="checkbox"]:checked + label + .diff-billing-address {
-    display: block; /* Show the different billing address section */
+    display: block; 
 }
 .place-order{
     position: fixed;
@@ -196,12 +191,12 @@ select:focus {
     justify-content: space-between;
     row-gap: 2rem;
     width:90vw;
-    font-size: 0.75rem; /* Ensure this matches the overall form font size */
-    line-height: 1.2rem; /* Aligns the text with the checkbox */
+    font-size: 0.75rem; 
+    line-height: 1.2rem; 
    
     .month{
         width:27vw;
-        /* border:none; */
+       
         
     }
     .year{
@@ -221,17 +216,17 @@ select:focus {
     top: -20px;
     font-size: 12px;
     color: #333;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.5s ease; /* Smooth transition */
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
 }
 
-/* Show label when the input is focused */
+
 .form-group input:focus + label,
 .form-group input:not(:placeholder-shown) + label {
     opacity: 1;
 }
 
-/* Basic styling for inputs */
+
 .form-group input {
     width: 100%;
     box-sizing: border-box;
@@ -247,7 +242,6 @@ select:focus {
         margin-left: 0;
     }
     
-    /* margin-top: 2rem; */
 }
 .price-space{
     margin-bottom: 0.6rem;
@@ -261,7 +255,6 @@ select:focus {
     justify-content: space-between;
     text-align: left;
     font-size: 0.8rem;
-    /* margin-bottom: 1rem; */
     margin-left: 0rem;
 }
 .made-by{
@@ -275,7 +268,6 @@ select option{
     .container{
         margin:0 25%;
         margin-top: 4vh;
-        /* max-width: 65vw; */
     }
     .form-container{
         display: flex;
@@ -285,14 +277,11 @@ select option{
         max-width: 65vw;
         margin-top: 5vh;
         margin-bottom: 20vh;
-        /* width:60%; */
     } 
     .column{
         width:auto;
     }
-    /* .column{
-        /* width:28%; */
-        /* max-width: 22vw; */
+   
        
     
     .state-code{
@@ -326,10 +315,7 @@ select option{
         position: relative;
         width:180px;
         
-        /* position: fixed;
-        bottom: 15rem;
-        left:49rem;
-        width:13vw; */
+      
        
     }
     .place-order-button{
@@ -359,8 +345,5 @@ select option{
         flex-direction: column;
         text-align: center;
     }
-    /* .demo-button-div{
-        
-        bottom: 0;
-    } */
+   
 }
